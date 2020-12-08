@@ -15,6 +15,7 @@ if(n > 100) {
     }
 
     console.groupEnd();
+    console.log('\n');
 }
 
 
@@ -30,5 +31,27 @@ while(i < 16) {
 }
 
 console.groupEnd();
+console.log('\n');
+
+
+/* [ TASK 3 > Chess board ] */
+let x = 1;
+let even = false;
+
+// start > drawing rows
+console.group('Задание 3. Шахматная доска');
+do {
+    switch(even) {
+        case false:
+            console.log(' # # # #');
+        case true:
+            console.log('# # # # ');
+    }
+    
+    x++;
+} while(x < 9)
+
+console.groupEnd();
+console.log('\n');
 
 
