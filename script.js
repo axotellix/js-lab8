@@ -1,8 +1,7 @@
 
 /* [ TASK 1 > Sheep counting ] */
 let c = 0;
-let n = 5;
-//let n = prompt('Введите кол-во овец:');
+let n = prompt('Введите кол-во овец:');
 
 if(n > 100) {
     console.log('Вы спать вообще собираетесь?')
