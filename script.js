@@ -55,3 +55,37 @@ console.groupEnd();
 console.log('\n');
 
 
+/* [ TASK 4 > Sort numbers ] */
+let nums = [5, 2, 7];
+
+console.group('Задание 4. Сортировка чисел');
+
+// print > initial array
+let arr_str = '';
+for(let i = 0; i < nums.length; i++) {
+    arr_str += nums[i] + ' ';
+}
+console.log(arr_str);
+
+// sort > initial array
+for(let i = 0; i < nums.length; i++) {
+    for(let j = nums.length; j >= i + 1; j--) {
+       if(nums[j - 1] > nums[j]) {
+           let t = nums[j];
+           nums[j] = nums[j - 1];
+           nums[j - 1] = t;
+       } 
+    }
+}
+
+// print > new array
+arr_str = '';
+for(let i = 0; i < nums.length; i++) {
+    arr_str += nums[i] + ' ';
+}
+console.log(arr_str);
+
+console.groupEnd();
+console.log('\n');
+
+
