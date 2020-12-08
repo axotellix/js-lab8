@@ -89,3 +89,26 @@ console.groupEnd();
 console.log('\n');
 
 
+/* [ TASK 5 > Max number ] */
+let nums2 = [5, 2, 7, -3, 0];
+let max = nums2[0];
+
+console.group('Задание 5. Максимальное значение');
+
+// print > initial array
+let arr2_str = '';
+for(let i = 0; i < nums2.length; i++) {
+    arr2_str += nums2[i] + ' ';
+}
+console.log(arr2_str);
+
+// find > max value
+for(let i = 0; i < nums2.length; i++) {
+    if(max < nums2[i]) max = nums2[i];
+}
+
+// print > max value
+console.log(max);
+
+console.groupEnd();
+console.log('\n');
